@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10090d">
+  <meta name="description" content="Ask the mysterious Mentallo a question, pull the cord, and receive your fortune.">
+  <title>Mentallo — The Midnight Oracle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <main class="stage">
+    <header class="intro">
+      <p class="eyebrow">The astonishing mechanical oracle</p>
+      <h1>MENTALLO</h1>
+      <p class="instruction">Think of a question. Pull the cord. Tempt fate.</p>
+    </header>
+
+    <section class="machine" id="machine" aria-label="Mentallo fortune-telling machine">
+      <div class="bulbs bulbs-top" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="marquee" aria-hidden="true"><span>One question</span><b>◆</b><span>One answer</span></div>
+      <div class="cabinet">
+        <div class="arch">
+          <div class="stars" aria-hidden="true">✦　·　✧　·　✦</div>
+          <div class="oracle-face" aria-hidden="true">
+            <div class="brow"></div>
+            <div class="eyes"><i></i><i></i></div>
+            <div class="nose"></div>
+            <div class="moustache">⌁</div>
+          </div>
+          <div class="nameplate">THE MIDNIGHT ORACLE</div>
+        </div>
+
+        <div class="answer-panel" id="answerPanel" role="status" aria-live="polite" aria-atomic="true">
+          <p class="answer-kicker" id="answerKicker">The veil is still</p>
+          <p class="answer" id="answer">Pull the cord to reveal your fortune</p>
+        </div>
+
+        <div class="ornament" aria-hidden="true"><span>✦</span></div>
+      </div>
+
+      <div class="cord-zone" id="cordZone">
+        <div class="cord-label" id="cordLabel">Pull &amp; release</div>
+        <div class="cord" id="cord" aria-hidden="true"></div>
+        <button class="handle" id="handle" type="button" aria-label="Pull Mentallo's fortune cord. Drag down and release, or press Space or Enter.">
+          <span class="handle-ring"></span>
+          <span class="handle-grip"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </section>
+
+    <p class="hint" id="hint">Drag the handle down <span aria-hidden="true">↓</span><span class="keyboard-hint"> or press Space</span></p>
+  </main>
+  <footer>FORTUNES FOR ENTERTAINMENT ONLY <span>•</span> EST. UNDER A QUESTIONABLE MOON</footer>
+  <script src="script.js"></script>
+</body>
+</html>
